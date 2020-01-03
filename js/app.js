@@ -69535,7 +69535,7 @@ function EventRow(props) {
     key: row.id
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
     component: react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"],
-    to: "/events/".concat(row.id),
+    to: "/event-manager/events/".concat(row.id),
     className: classes.titleLink
   }, row.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], null, startDate.toLocaleDateString(undefined, {
     year: 'numeric',
