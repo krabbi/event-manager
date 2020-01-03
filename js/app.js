@@ -69029,31 +69029,31 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.toolbar
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/",
+        path: "/event-manager/",
         component: _containers_events_EventsTable__WEBPACK_IMPORTED_MODULE_7__["default"],
         exact: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/events",
+        path: "/event-manager/events",
         component: _containers_events_EventsTable__WEBPACK_IMPORTED_MODULE_7__["default"],
         exact: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/events/:eventId",
+        path: "/event-manager/events/:eventId",
         component: _containers_events_Event__WEBPACK_IMPORTED_MODULE_8__["default"],
         exact: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/login",
+        path: "/event-manager/login",
         component: _containers_Login__WEBPACK_IMPORTED_MODULE_9__["default"],
         exact: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/register",
+        path: "/event-manager/register",
         component: _containers_Register__WEBPACK_IMPORTED_MODULE_10__["default"],
         exact: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/organizers",
+        path: "/event-manager/organizers",
         component: _containers_organizers_OrganizersTable__WEBPACK_IMPORTED_MODULE_11__["default"],
         exact: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/categories",
+        path: "/event-manager/categories",
         component: _containers_categories_CategoriesTable__WEBPACK_IMPORTED_MODULE_12__["default"],
         exact: true
       }))));
@@ -69382,19 +69382,19 @@ function NavigationDrawer(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["IconButton"], {
     onClick: toggleNavigation
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ChevronLeft__WEBPACK_IMPORTED_MODULE_6___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Divider"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["List"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItem"], {
-    to: "/events",
+    to: "/event-manager/events",
     component: react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"],
     button: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItemIcon"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Event__WEBPACK_IMPORTED_MODULE_8___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItemText"], {
     primary: 'Events'
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItem"], {
-    to: "/organizers",
+    to: "/event-manager/organizers",
     component: react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"],
     button: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItemIcon"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Business__WEBPACK_IMPORTED_MODULE_7___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItemText"], {
     primary: 'Organizers'
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItem"], {
-    to: "/categories",
+    to: "/event-manager/categories",
     component: react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"],
     button: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItemIcon"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_List__WEBPACK_IMPORTED_MODULE_9___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["ListItemText"], {
@@ -69723,11 +69723,11 @@ function ApplicationBar(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
     className: classes.button,
     component: react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"],
-    to: "/login"
+    to: "/event-manager/login"
   }, "Sign In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
     className: classes.button,
     component: react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"],
-    to: "/register"
+    to: "/event-manager/register"
   }, "Sign Up"))));
 }
 
@@ -69810,14 +69810,14 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       if (this.props.email) {
-        this.props.history.push('/');
+        this.props.history.push('/event-manager/');
       }
     }
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate() {
       if (this.props.email) {
-        this.props.history.push('/');
+        this.props.history.push('/event-manager/');
       }
     }
   }, {
@@ -69913,14 +69913,14 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       if (this.props.email) {
-        this.props.history.push('/');
+        this.props.history.push('/event-manager/');
       }
     }
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate() {
       if (this.props.email) {
-        this.props.history.push('/');
+        this.props.history.push('/event-manager/');
       }
     }
   }, {
