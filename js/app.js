@@ -69110,7 +69110,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_RootStore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stores/RootStore */ "./src/stores/RootStore.js");
 
-var API_ROOT = 'http://api.my-events.site/api/v1';
+var API_ROOT = 'https://cors-anywhere.herokuapp.com/http://api.my-events.site/api/v1';
 
 var handleErrors = function handleErrors(status) {
   if (status === 401) {
